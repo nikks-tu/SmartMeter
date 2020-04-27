@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_main_">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_main">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_txt"
+            android:textColor="@color/text_color_dark"
+            android:layout_margin="@dimen/margin_five"
+            android:layout_weight="1.5"
+            android:padding="@dimen/margin_five"
+            android:textSize="@dimen/activity_textSize_small_16"
+            android:id="@+id/tv_date"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode"
+            android:textColor="@color/text_color_dark"
+            android:layout_margin="@dimen/margin_five"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_five"
+            android:textSize="@dimen/activity_textSize_small_16"
+            android:id="@+id/tv_mode"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="@dimen/margin_five"
+                android:padding="@dimen/margin_two"
+                android:textSize="@dimen/activity_textSize_small"
+                android:id="@+id/tv_balance_amt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color_dark"
+                android:layout_margin="@dimen/margin_five"
+                android:paddingLeft="@dimen/margin_two"
+                android:paddingRight="@dimen/margin_two"
+                android:textSize="@dimen/textSize_fifteen"
+                android:id="@+id/tv_status_recharge"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/text_color_light_op"
+        android:layout_marginTop="@dimen/margin_two"
+        android:layout_marginBottom="@dimen/margin_two"/>
+</LinearLayout>

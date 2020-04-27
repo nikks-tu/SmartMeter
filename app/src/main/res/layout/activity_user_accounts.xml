@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.techuva.smartmeter.activity.UserAccountsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+            <TextView
+                android:id="@+id/tv_btn_continue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:padding="@dimen/margin_five"
+                android:layout_margin="@dimen/margin_five"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/activity_textSize_small"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/txt_continue"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_five"
+            android:layout_marginBottom="@dimen/margin_five"
+            android:paddingLeft="@dimen/margin_five"
+            android:paddingRight="@dimen/margin_five">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_five"
+                android:layout_marginBottom="@dimen/margin_five">
+                <ImageView
+                    android:layout_margin="@dimen/margin_five"
+                    android:layout_width="@dimen/extra_small_image_view"
+                    android:layout_height="@dimen/extra_small_image_view"
+                    android:src="@drawable/device_icon"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_connection"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/activity_textSize_small"
+                    android:id="@+id/tv_success_txt"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="@dimen/margin_five"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_one"
+            android:background="@color/text_color_light_op"
+            android:layout_marginTop="@dimen/margin_one"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcv_user_accounts"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_margin="@dimen/margin_five"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_data_list"
+            android:visibility="gone"
+            android:layout_margin="@dimen/margin_five"/>
+    </LinearLayout>
+
+</LinearLayout>

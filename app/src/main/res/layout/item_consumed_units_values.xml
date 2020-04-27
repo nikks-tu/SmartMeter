@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:paddingTop="@dimen/margin_five"
+android:paddingBottom="@dimen/margin_five"
+android:gravity="center"
+android:weightSum="4">
+<TextView
+    android:layout_width="0dp"
+    android:layout_weight="0.8"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/dated_on"
+    android:layout_marginLeft="@dimen/margin_two"
+    android:layout_marginRight="@dimen/margin_two"
+    android:textColor="@color/text_color_light"
+    android:textSize="@dimen/activity_textSize_small_16"
+    android:id="@+id/tv_date"/>
+<TextView
+    android:layout_width="0dp"
+    android:layout_weight="0.8"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/meter_reading"
+    android:layout_marginLeft="@dimen/margin_two"
+    android:layout_marginRight="@dimen/margin_two"
+    android:textColor="@color/text_color_light"
+    android:textSize="@dimen/activity_textSize_small_16"
+    android:id="@+id/tv_kwh"
+    android:visibility="gone"/>
+<TextView
+    android:layout_width="0dp"
+    android:layout_weight="0.8"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/units"
+    android:textColor="@color/text_color_light"
+    android:textSize="@dimen/activity_textSize_small_16"
+    android:id="@+id/tv_consumed_units"
+    android:layout_marginLeft="@dimen/margin_two"
+    android:layout_marginRight="@dimen/margin_two"/>
+<TextView
+    android:layout_width="0dp"
+    android:layout_weight="1.2"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/unit_rate"
+    android:textColor="@color/text_color_light"
+    android:layout_marginLeft="@dimen/margin_two"
+    android:layout_marginRight="@dimen/margin_two"
+    android:textSize="@dimen/activity_textSize_small_16"
+    android:id="@+id/tv_unit_rate"/>
+<TextView
+    android:layout_width="0dp"
+    android:layout_weight="1.2"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/amount"
+    android:textColor="@color/text_color_light"
+    android:layout_marginLeft="@dimen/margin_two"
+    android:layout_marginRight="@dimen/margin_two"
+    android:textSize="@dimen/activity_textSize_small_16"
+    android:id="@+id/tv_amount"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <stroke android:width="0dp" android:color="@color/text_color_light_op" />
+
+            <solid android:color="@color/white" />
+            <padding android:bottom="@dimen/margin_two" android:left="@dimen/margin_five" android:right="@dimen/margin_five" android:top="@dimen/margin_two"/>
+
+            <corners android:bottomLeftRadius="@dimen/view_margin" android:bottomRightRadius="@dimen/view_margin" android:topLeftRadius="@dimen/view_margin" android:topRightRadius="@dimen/view_margin" />
+        </shape>
+    </item>
+
+</selector>

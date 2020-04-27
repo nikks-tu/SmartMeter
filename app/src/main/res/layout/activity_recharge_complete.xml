@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RechargeCompleteActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_back_btn">
+            <ImageView
+                android:layout_width="@dimen/activity_profile_margin"
+                android:layout_height="@dimen/activity_profile_margin"
+                android:src="@drawable/back"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/iv_back_btn"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/view_margin"
+                android:layout_marginLeft="@dimen/view_margin"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/activity_textSize_large"
+            tools:ignore="RtlCompat"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:padding="@dimen/margin_five"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_download"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="@dimen/activity_reside_menu_item_marginleft"
+                android:layout_height="@dimen/activity_reside_menu_item_marginleft"
+                android:src="@drawable/download"
+                android:tint="@color/white"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/iv_download"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/view_margin"
+                android:layout_marginLeft="@dimen/view_margin"/>
+        </LinearLayout>
+    </LinearLayout>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:id="@+id/ll_layout_main"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/large_view_margin"
+           android:layout_marginEnd="@dimen/large_view_margin"
+           android:orientation="vertical"
+           android:layout_gravity="center"
+           android:background="@drawable/three_side_border">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/colorPrimary"
+               android:gravity="center"
+               android:textAllCaps="true"
+               android:letterSpacing="0.1"
+               android:padding="@dimen/elarge_view_margin"
+               android:text="@string/recharge_complete"
+               android:textSize="@dimen/activity_textSize_small"
+               android:textColor="@color/white"
+               tools:targetApi="lollipop"
+               android:id="@+id/tv_heading"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:padding="@dimen/view_margin">
+
+               <LinearLayout
+                   android:id="@+id/ll_success"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="@dimen/top_ten_layout_width"
+                       android:layout_height="@dimen/top_ten_layout_width"
+                       android:layout_gravity="center"
+                       android:layout_margin="@dimen/margin_three"
+                       android:src="@drawable/success" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_margin="@dimen/margin_three"
+                       android:gravity="center"
+                       android:text="@string/successful"
+                       android:textColor="@color/text_color_green"
+                       android:textSize="@dimen/activity_navigation_large" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_failed"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:visibility="gone">
+
+                   <ImageView
+                       android:id="@+id/iv_recharge_icon"
+                       android:layout_width="@dimen/top_ten_layout_width"
+                       android:layout_height="@dimen/top_ten_layout_width"
+                       android:layout_gravity="center"
+                       android:layout_margin="@dimen/margin_three"
+                       android:src="@drawable/failed" />
+
+                   <TextView
+                       android:id="@+id/tv_recharge_status"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_margin="@dimen/margin_three"
+                       android:gravity="center"
+                       android:text="@string/failed"
+                       android:textColor="@color/text_color_red"
+                       android:textSize="@dimen/activity_textSize_large_forty" />
+
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/tv_recharge_msg"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_margin="@dimen/view_margin"
+                   android:layout_marginTop="@dimen/view_margin"
+                   android:gravity="center"
+                   android:text="@string/failed"
+                   android:textColor="@color/text_color_dark"
+                   android:textSize="@dimen/activity_textSize_large" />
+
+
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:id="@+id/ll_recharge_details">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/margin_three"
+                     android:layout_marginTop="@dimen/view_margin"
+                     android:layout_marginRight="@dimen/margin_three"
+                     android:layout_marginBottom="@dimen/margin_five"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:text="@string/payment_ref"
+                         android:textColor="@color/text_color_light"
+                         android:textSize="@dimen/activity_textSize_small_16"
+                         android:id="@+id/tv_payemnt_ref_txt"
+                         />
+
+                     <TextView
+                         android:id="@+id/tv_payemnt_ref"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:gravity="end"
+                         android:textColor="@color/text_color_dark"
+                         android:textSize="@dimen/activity_textSize_small_16" />
+
+                 </LinearLayout>
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="@dimen/margin_three"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/tv_amount_txt"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:text="@string/amount_"
+                         android:textColor="@color/text_color_light"
+                         android:textSize="@dimen/activity_textSize_small_16" />
+
+                     <TextView
+                         android:id="@+id/tv_amount"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:text=""
+                         android:gravity="end"
+                         android:textColor="@color/text_color_dark"
+                         android:textSize="@dimen/activity_textSize_small_16" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="@dimen/margin_three"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/tv_recharge_date_txt"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:text="@string/date"
+                         android:textColor="@color/text_color_light"
+                         android:textSize="@dimen/activity_textSize_small_16" />
+
+                     <TextView
+                         android:id="@+id/tv_recharge_date"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:text=""
+                         android:gravity="end"
+                         android:textColor="@color/text_color_dark"
+                         android:textSize="@dimen/activity_textSize_small_16" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="@dimen/margin_three"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/tv_payment_method_txt"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:text="@string/payment_method"
+                         android:textColor="@color/text_color_light"
+                         android:textSize="@dimen/activity_textSize_small_16" />
+
+                     <TextView
+                         android:id="@+id/tv_payment_method"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/margin_two"
+                         android:text=""
+                         android:gravity="end"
+                         android:textColor="@color/text_color_dark"
+                         android:textSize="@dimen/activity_textSize_small_16" />
+                 </LinearLayout>
+             </LinearLayout>
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:id="@+id/ll_recharge_again"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/view_margin"
+               android:layout_marginEnd="@dimen/view_margin"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_marginTop="@dimen/large_view_margin"
+               android:layout_marginBottom="@dimen/margin_two"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:textSize="@dimen/activity_textSize_small"
+                   android:id="@+id/tv_recharge_again"
+                   android:paddingStart="@dimen/view_margin"
+                   android:paddingEnd="@dimen/view_margin"
+                   android:paddingTop="@dimen/view_margin"
+                   android:paddingBottom="@dimen/view_margin"
+                   android:layout_gravity="center"
+                   android:text="@string/recharge_again"
+                   android:textColor="@color/text_color_red"/>
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

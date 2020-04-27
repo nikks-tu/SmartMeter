@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_main"
+    android:layout_margin="@dimen/margin_two"
+    android:gravity="end">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="end">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/tv_breakup_desc"
+           android:textSize="@dimen/activity_textSize_extra_small"
+           android:textColor="@color/text_color_light"
+           android:layout_margin="@dimen/margin_two"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/tv_breakup_amt"
+           android:textSize="@dimen/activity_textSize_extra_small"
+           android:textColor="@color/text_color_light"
+           android:layout_margin="@dimen/margin_two"/>
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_taxes"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:visibility="gone"
+        android:textSize="@dimen/activity_textSize_extra_small"
+        android:textColor="@color/text_color_light"
+        android:layout_margin="@dimen/margin_two"/>
+</LinearLayout>
